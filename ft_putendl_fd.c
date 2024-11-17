@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 18:53:16 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/15 17:36:38 by naessgui         ###   ########.fr       */
+/*   Created: 2024/11/13 12:52:52 by naessgui          #+#    #+#             */
+/*   Updated: 2024/11/17 10:55:15 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+void	ft_putendl_fd(char *s, int fd)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }
-// int main()
+// int	main(void)
 // {
-// 	char c ='f';
-// 	printf("%d\n",ft_isalpha(c));
+// 	char	str[] = "nada essghiar";
+
+// 	ft_putendl_fd(str, 1);
 // }

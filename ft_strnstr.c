@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:20:05 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/07 21:36:11 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/17 12:02:12 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-// int main()
-// {
-//     const char haystack[] = "nada essghiar lucy";
-//     const char needle[] = "";
-//     printf ("%s\n", ft_strnstr(haystack , needle , 15));
-//     printf ("%s\n", strnstr(haystack, needle, 15));
-
-// }

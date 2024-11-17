@@ -6,43 +6,42 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:13:51 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/07 21:35:23 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/17 15:01:49 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dest, const char *src, size_t size)
+size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 {
-	unsigned int	slen;
-	unsigned int	dlen;
-	int				i;
-	int				j;
+	size_t	slen;
+	size_t	dlen;
+	size_t	i;
+	size_t	j;
 
 	slen = ft_strlen(src);
 	i = 0;
 	j = 0;
+	if (dest == NULL && dstsize == 0)
+		return (slen);
 	while (dest[i])
-	{
 		i++;
-	}
 	dlen = i;
-	if (size <= dlen)
-		return (size + slen);
-	while (src[j] && j < size - dlen - 1)
+	if (dstsize <= dlen)
+		return (dstsize + slen);
+	while (src[j] && j < dstsize - dlen - 1)
 	{
-		dest[i] = src[j];
-		i++;
+		dest[i + j] = src[j];
 		j++;
 	}
-	dest[i] = '\0';
+	dest[i + j] = '\0';
 	return (dlen + slen);
 }
-
+// #include<stdio.h>
+// #include<string.h>
 // int main(){
-//     char dest[] = "na";
-//     char src[] = " essghiar";
-//     printf("%zu\n",ft_strlcat(dest, src, 1));
-//     printf("%zu\n", strlcat(dest, src, 1));
-//     printf("%s", dest);
-// }
+// 	char dest[20]= "essghiar";
+// 	char src[]= "nada";
+// 	ft_strlcat(NULL,src,0);
+// 	printf("%s\n", dest);
+//  }

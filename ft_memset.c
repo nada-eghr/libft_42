@@ -6,16 +6,16 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 14:57:33 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/08 19:28:00 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/17 18:49:29 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*ptr;
-	int				i;
+	size_t				i;
 
 	ptr = (unsigned char *)b;
 	i = 0;
@@ -24,12 +24,6 @@ void	ft_memset(void *b, int c, size_t len)
 		ptr[i] = (unsigned char)c;
 		i++;
 	}
-}
-int main()
-{
-	int nb;
-	ft_memset(&nb,255,4);
-	ft_memset(&nb,254,2);
-    ft_memset(&nb,57,1);
-    printf("%d",nb);
+	return ptr;
+	
 }

@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 07:36:15 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/07 21:44:47 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/17 12:46:11 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,21 +31,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		}
 	}
 	else
-	{
-		i = 0;
-		while (i < n)
-		{
-			d[i] = s[i];
-			i++;
-		}
-	}
+		ft_memcpy(dest, src, n);
 	return (dest);
 }
-// int main()
-// {
-//     char d[18];
-//     char s[] = "nada essguiar";
-//     printf("%s\n",ft_memmove(d , s, 7) );
-//     printf("%s\n",memmove(d , s, 7) );
-
-// }

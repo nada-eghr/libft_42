@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 13:11:06 by naessgui          #+#    #+#             */
-/*   Updated: 2024/10/23 13:32:50 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/17 10:58:23 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
-
-/*#include <stdio.h>
-int main ()
-{
-	printf("%c",ft_toupper('l'));
-}*/

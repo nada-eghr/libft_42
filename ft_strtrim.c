@@ -5,38 +5,49 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/08 12:12:18 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/08 19:34:45 by naessgui         ###   ########.fr       */
+/*   Created: 2024/11/08 19:58:49 by naessgui          #+#    #+#             */
+/*   Updated: 2024/11/17 19:35:58 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static int	new_start(char const *s1, char const *set, int i)
+{
+	while (s1[i] && ft_strchr(set, s1[i]))
+		i++;
+	return (i);
+}
+static int	new_end(char const *s1, char const *set, int end, int i)
+{
+	while (end > i && ft_strchr(set, s1[end]))
+		end--;
+	return (end);
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int i;
-	int slen;
-	int end;
-	char *result;
-	int total;
+	int		i;
+	int		end;
+	int		total_len;
+	char	*result;
+	int		j;
 
-	i = 0;
-	slen = strlen(s1);
-	end = slen - 1;
-	while (s1[i] && strchr(set, s1[i]))
-		i++;
-	while (end > i && strchr(set, s1[end]))
-		end--;
-	total = end - i + 1;	
-	result = malloc(sizeof(char) * (total + 1));
-	if (result == NULL)
+	if (!s1 || !set)
 		return (NULL);
-	int j = 0;
-	while (j < total)
+	i = 0;
+	end = new_end(s1, set, (ft_strlen(s1)) - 1, i);
+	i = new_start(s1, set, i);
+	total_len = end - i + 1;
+	result = malloc((total_len + 1) * sizeof(char));
+	if (!result)
+		return (NULL);
+	j = 0;
+	while (j < total_len)
 	{
 		result[j] = s1[i + j];
 		j++;
 	}
-	result[total] = '\0';
+	result[j] = '\0';
 	return (result);
 }

@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:10:18 by naessgui          #+#    #+#             */
-/*   Updated: 2024/10/24 21:10:00 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/15 18:40:45 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 
 int	ft_isalnum(int c)
 {
-	return ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A'
-			&& c <= 'Z'));
+	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A'
+			&& c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
-
-/*#include <stdio.h>
-int	main(void)
-{
-	printf ("%d", ft_isalnum('@'));
-}*/
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	printf ("%d", ft_isalnum('4'));
+// }

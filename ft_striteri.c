@@ -1,26 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 18:53:16 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/15 17:36:38 by naessgui         ###   ########.fr       */
+/*   Created: 2024/11/13 10:24:39 by naessgui          #+#    #+#             */
+/*   Updated: 2024/11/17 21:43:45 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+void ft_striteri(char *s,void (*f)(unsigned int, char*))
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+    size_t i ;
+    i = 0;
+    if (!s || !f)
+        return ;
+    while (s[i])
+    {
+        f(i , &s[i]);
+        i++;
+    }
+    
 }
+
+// #include <stdio.h>
+// void up(char *c)
+// {
+//     *c += 1;
+// }
+
 // int main()
 // {
-// 	char c ='f';
-// 	printf("%d\n",ft_isalpha(c));
+//     char c = 'a';
+//     up(&c);
+    
+//     printf("%c" , c);
 // }

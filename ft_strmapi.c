@@ -1,39 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 15:34:14 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/16 20:29:57 by naessgui         ###   ########.fr       */
+/*   Created: 2024/11/12 21:05:49 by naessgui          #+#    #+#             */
+/*   Updated: 2024/11/17 21:45:06 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
-{
-	int		i;
-	char	*dest;
+#include "libft.h"
+#include "libft.h"
+#include "libft.h"
+#include "libft.h"
 
+
+
+
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+{
+	int i ;
 	i = 0;
-	dest = (char *)malloc(ft_strlen(s) + 1);
-	if (!dest)
+	int slen ;
+	if (!s || !f)
 		return (NULL);
+	slen = ft_strlen(s);
+	char *ptr;
+	ptr = malloc(slen + 1);
+	if (!ptr)
+	return (NULL);
 	while (s[i])
 	{
-		dest[i] = s[i];
+		ptr[i] = f(i,s[i]);
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	ptr[i] = '\0';
+	return (ptr);
+	
 }
-// int main ()
-// {
-//     char s[]= "nada essguiar";
-//     char dest[20];
-//     printf("%s",ft_strdup(s));
-//     printf("%s",dest);
 
+// int main()
+// {
+// 	char (*f)(unsigned int, char);
+// 	f = appercase;
+// 	char const s[] = "nada ESFsghiar";
+// 	printf("%s\n",ft_strmapi(s,f));
+	
 // }

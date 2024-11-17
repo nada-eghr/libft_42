@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 15:08:22 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/07 21:36:29 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/17 17:49:07 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ char	*ft_strrchr(const char *s, int c)
 // {
 // 	char s[] = "nada d";
 // 	char c = 'a';
-// 	printf("%s", ft_strrchr(s, c));
+// 	printf("%s", strrchr(s, c));
 // }

@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 12:04:44 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/07 21:33:28 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/17 11:09:22 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-/*#include <stdio.h>
-int	main(void)
-{
-	printf("%d", ft_isascii('i'));
-}*/

@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 18:53:16 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/15 17:36:38 by naessgui         ###   ########.fr       */
+/*   Created: 2024/11/13 13:32:22 by naessgui          #+#    #+#             */
+/*   Updated: 2024/11/13 13:34:26 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+void ft_putchar_fd(char c, int fd)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+    write (fd, &c, 1);
+    
 }
-// int main()
-// {
-// 	char c ='f';
-// 	printf("%d\n",ft_isalpha(c));
-// }

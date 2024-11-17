@@ -1,26 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 18:53:16 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/15 17:36:38 by naessgui         ###   ########.fr       */
+/*   Created: 2024/11/13 13:04:21 by naessgui          #+#    #+#             */
+/*   Updated: 2024/11/17 17:42:29 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+void ft_putnbr_fd(int n, int fd)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+    if (n == -2147483648)
+        ft_putstr_fd("-2147483648", fd);
+    else if (n < 0)
+    {
+        ft_putchar_fd('-',fd);
+        n *= -1;
+        ft_putnbr_fd(n ,fd);
+    }
+    else if (n > 9)
+    {
+        ft_putnbr_fd(n / 10 , fd);
+        ft_putnbr_fd(n % 10 , fd);
+    }
+    else 
+        ft_putchar_fd(n + 48, fd);
 }
+// #include <stdio.h>
 // int main()
 // {
-// 	char c ='f';
-// 	printf("%d\n",ft_isalpha(c));
+//     ft_putnbr_fd(12,1);
+
 // }
