@@ -6,14 +6,13 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 13:32:22 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/13 13:34:26 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/18 20:11:15 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-    write (fd, &c, 1);
-    
+	write(fd, &c, 1);
 }

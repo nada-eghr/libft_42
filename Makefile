@@ -1,5 +1,4 @@
-
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 SR = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
@@ -18,9 +17,9 @@ NAME = libft.a
 all: $(NAME)
 
 $(NAME): $(OB)
-		ar rc $(NAME) $(OB)
+		ar rcs $(NAME) $(OB)
 
- $(OB): libft.h 
+$(OB): libft.h #pattern rule
 
 clean:
 		rm -f $(OB) $(OBB)
@@ -30,4 +29,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY:  all bonus clean fclean re 
+.PHONY:  all clean fclean re
