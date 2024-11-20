@@ -17,12 +17,12 @@ NAME = libft.a
 all: $(NAME)
 
 $(NAME): $(OB)
-		ar rcs $(NAME) $(OB)
+		ar rc $(NAME) $(OB)
 
-$(OB): libft.h #pattern rule
+$(OB): libft.h 
 
 clean:
-		rm -f $(OB) $(OBB)
+		rm -f $(OB)
 
 fclean: clean
 		rm -f $(NAME)

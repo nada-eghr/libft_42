@@ -1,9 +1,17 @@
-//  #include "libft.h"
+// #include "libft.h"
 // #include <stdio.h>
 // #include <string.h>
-// int main()
+
+// void	upper(unsigned int i, char *c)
 // {
-// 	char str1[] = "    nada essghiarna   ";
-    
-//     printf("%s\n",ft_strtrim(str1, " "));
+// 	(void)i;
+// 	if (*c >= 'a' && *c <= 'z')
+// 		*c -= 32;
+// }
+// int	main(void)
+// {
+// 	char s[] = "tgrtrg";
+// 	ft_striteri(s, upper);
+
+// 	printf("%s\n", s);
 // }

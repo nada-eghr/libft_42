@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 21:26:38 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/16 10:39:46 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/20 18:01:18 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int	ft_atoi(const char *str)
 	}
 	return (result * signe);
 }
+// #include<stdio.h>
 // int	main(void)
 // {
 // 	printf("%d\n", ft_atoi("+-922036gfg95654456854775fgf810855858525522"));

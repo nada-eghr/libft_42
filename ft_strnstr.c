@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:20:05 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/17 12:02:12 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/20 17:35:50 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	i;
 	size_t	j;
 
+	if (haystack == NULL && len == 0)
+		return (NULL);
 	if (*needle == '\0')
 		return ((char *)haystack);
 	i = 0;
