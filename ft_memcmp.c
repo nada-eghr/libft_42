@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 11:06:14 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/16 11:47:35 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/21 13:39:21 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-// int main ()
-// {
-//     unsigned char s1[] = "nana essguiar";
-//     unsigned char s2[] = "ndda";
-//     printf("%d\n", ft_memcmp(s1, s2, 1));
-//     printf("%d\n", memcmp(s1, s2, 1));
-// }

@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:13:51 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/17 15:01:49 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/21 13:38:26 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 	dest[i + j] = '\0';
 	return (dlen + slen);
 }
-// #include<stdio.h>
-// #include<string.h>
-// int main(){
-// 	char dest[20]= "essghiar";
-// 	char src[]= "nada";
-// 	ft_strlcat(NULL,src,0);
-// 	printf("%s\n", dest);
-//  }

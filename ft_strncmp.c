@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 11:56:20 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/17 17:03:12 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/21 13:37:48 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	const char	s1[] = "Sada essghiar";
-// 	const char	s2[] = "SASAR";
-
-// 	printf("%d\n", ft_strncmp(s1, s2, 2));
-//     printf("%d\n", strncmp(s1, s2, 2));
-// }

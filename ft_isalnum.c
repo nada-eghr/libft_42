@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:10:18 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/20 19:27:33 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/21 13:40:15 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	printf ("%d", ft_isalnum('4'));
-// }

@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:53:16 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/15 17:36:38 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/21 13:40:09 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,3 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-// int main()
-// {
-// 	char c ='f';
-// 	printf("%d\n",ft_isalpha(c));
-// }

@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 17:16:55 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/20 12:05:59 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/21 13:39:45 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,8 +57,3 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 	return (str);
 }
-// #include<stdio.h>
-// int main()
-// {
-// 	printf("%s", ft_itoa(13));
-// }

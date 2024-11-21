@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 10:13:56 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/17 17:20:32 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/21 13:30:44 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,25 +105,3 @@ char	**ft_split(char const *str, char c)
 		return (NULL);
 	return (ft_alloc(tab, str, c));
 }
-// #include<stdio.h>
-// int	main(void)
-// {
-// 	char *tab = "  nada essghiar jfjdkd   ";
-// 	char c = ' ';
-// 	int j;
-// 	char **str = ft_splitt(tab, c);
-// 	int i = 0;
-// 	int c_w = count_word(tab, c);
-
-// 	while (i < c_w)
-// 	{
-// 		j = 0;
-// 		while (str[i][j])
-// 		{
-// 			printf("%c", str[i][j]);
-// 			j++;
-// 		}
-// 		printf("\n");
-// 		i++;
-// 	}
-// }

@@ -6,7 +6,7 @@
 /*   By: naessgui <naessgui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 10:49:08 by naessgui          #+#    #+#             */
-/*   Updated: 2024/11/17 10:53:16 by naessgui         ###   ########.fr       */
+/*   Updated: 2024/11/21 13:38:20 by naessgui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t destsize)
 	}
 	return (ft_strlen(src));
 }
-// int main()
-// {
-//     char dest[5];
-//     char src[] = "nada";
-
-//     printf ("%zu\n",ft_strlcpy(NULL, NULL,0));
-// 	printf ("%s\n",dest);
-// }
